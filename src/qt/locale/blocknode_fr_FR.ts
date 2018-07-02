@@ -152,16 +152,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Blocknode will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BNDs from being stolen by malware infecting your computer.</source>
-        <translation>Blocknode va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos BNDs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>Chronos will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRNs from being stolen by malware infecting your computer.</source>
+        <translation>Chronos va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos CRNs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BND&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS BND&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRN&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS CRN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -211,16 +211,16 @@
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
-        <source>Enter a Blocknode Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse Blocknode que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
+        <source>Enter a Chronos Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse Chronos que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The Blocknode address to sign the message with</source>
-        <translation>L'adresse Blocknode avec laquelle signer le message</translation>
+        <source>The Chronos address to sign the message with</source>
+        <translation>L'adresse Chronos avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Blocknode address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Blocknode</translation>
+        <source>Sign the message to prove you own this Chronos address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Chronos</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The Blocknode address the message was signed with</source>
-        <translation>L'adresse Blocknode avec laquelle le message a été signé</translation>
+        <source>The Chronos address the message was signed with</source>
+        <translation>L'adresse Chronos avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Blocknode address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Blocknode renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Chronos address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Chronos renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a Blocknode address</source>
-        <translation>Envoyer des pièces à une adresse Blocknode</translation>
+        <source>Send coins to a Chronos address</source>
+        <translation>Envoyer des pièces à une adresse Chronos</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for Blocknode</source>
-        <translation>Modifier les options de configuration pour Blocknode</translation>
+        <source>Modify configuration options for Chronos</source>
+        <translation>Modifier les options de configuration pour Chronos</translation>
     </message>
     <message>
-        <source>Sign messages with your Blocknode addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse Blocknode pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your Chronos addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse Chronos pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Blocknode addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Blocknode spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified Chronos addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Chronos spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -653,8 +653,8 @@ Adresse : %4
         <translation>Chercher</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (blocknode.conf).</source>
-        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (blocknode.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (chronos.conf).</source>
+        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (chronos.conf).</translation>
     </message>
 </context>
 <context>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Blocknode address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Blocknode valide</translation>
+        <source>The entered address "%1" is not a valid Chronos address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Chronos valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1038,32 +1038,32 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BND</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 BND</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CRN</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 CRN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BND</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 BND</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CRN</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 CRN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BND to anonymize 10000 BND</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 BND pour anonymiser 10000 BND</translation>
+        <source>This option is the quickest and will cost about ~0.025 CRN to anonymize 10000 CRN</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 CRN pour anonymiser 10000 CRN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BND to anonymize 10000 BND</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 BND pour anonymiser 10000 BND</translation>
+        <source>This option is moderately fast and will cost about 0.05 CRN to anonymize 10000 CRN</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 CRN pour anonymiser 10000 CRN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 BND per 10000 BND you anonymize.</source>
-        <translation>0.1 BND par 10000 BND vous anonymisez.</translation>
+        <source>0.1 CRN per 10000 CRN you anonymize.</source>
+        <translation>0.1 CRN par 10000 CRN vous anonymisez.</translation>
     </message>
     </context>
 <context>
@@ -1433,8 +1433,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Après commission</translation>
     </message>
     <message>
-        <source>0 BND</source>
-        <translation>0 BND</translation>
+        <source>0 CRN</source>
+        <translation>0 CRN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1524,8 +1524,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The Blocknode address to send the payment to</source>
-        <translation>L'adresse Blocknode à laquelle envoyer le paiement</translation>
+        <source>The Chronos address to send the payment to</source>
+        <translation>L'adresse Chronos à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1570,8 +1570,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The Blocknode address to sign the message with</source>
-        <translation>L'adresse Blocknode avec laquelle signer le message</translation>
+        <source>The Chronos address to sign the message with</source>
+        <translation>L'adresse Chronos avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1598,16 +1598,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Blocknode address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Blocknode</translation>
+        <source>Sign the message to prove you own this Chronos address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Chronos</translation>
     </message>
     <message>
-        <source>The Blocknode address the message was signed with</source>
-        <translation>L'adresse Blocknode avec laquelle le message a été signé</translation>
+        <source>The Chronos address the message was signed with</source>
+        <translation>L'adresse Chronos avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Blocknode address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Blocknode renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Chronos address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Chronos renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1801,14 +1801,14 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     </message>
     </context>
 <context>
-    <name>ZBndControlDialog</name>
+    <name>ZCrnControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>blocknode-core</name>
+    <name>chronos-core</name>
     <message>
         <source>Error</source>
         <translation>Erreur</translation>

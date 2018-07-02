@@ -1,40 +1,40 @@
-Blocknode Core
+Chronos Core
 =====================
 
 Setup
 ---------------------
-[Blocknode Core](http://blocknode.tech/wallet) is the original Blocknode client and it builds the backbone of the network. However, it downloads and stores the entire history of Blocknode transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Chronos Core](http://chronos.tech/wallet) is the original Chronos client and it builds the backbone of the network. However, it downloads and stores the entire history of Chronos transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Blocknode on your native platform.
+The following are some helpful notes on how to run Chronos on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/blocknode-qt (GUI, 32-bit) or bin/32/blocknoded (headless, 32-bit)
-- bin/64/blocknode-qt (GUI, 64-bit) or bin/64/blocknoded (headless, 64-bit)
+- bin/32/chronos-qt (GUI, 32-bit) or bin/32/chronosd (headless, 32-bit)
+- bin/64/chronos-qt (GUI, 64-bit) or bin/64/chronosd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run blocknode-qt.exe.
+Unpack the files into a directory, and then run chronos-qt.exe.
 
 ### OSX
 
-Drag Blocknode-Qt to your applications folder, and then run Blocknode-Qt.
+Drag Chronos-Qt to your applications folder, and then run Chronos-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Blocknode Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Chronos Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Blocknode Forum](http://forum.blocknode.tech/).
-* Join our Discord server [Discord Server](https://discord.blocknode.tech)
-* Join one of our Slack groups [Blocknode Slack Groups](https://blocknode.tech/slack-logins/) (Main community is replaced by Discord).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Chronos Forum](http://forum.chronos.tech/).
+* Join our Discord server [Discord Server](https://discord.chronos.tech)
+* Join one of our Slack groups [Chronos Slack Groups](https://chronos.tech/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
-The following are developer notes on how to build Blocknode on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Chronos on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -42,7 +42,7 @@ The following are developer notes on how to build Blocknode on your native platf
 
 Development
 ---------------------
-The Blocknode repo's [root README](https://github.com/Blocknode-Project/Blocknode/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Chronos repo's [root README](https://github.com/Chronos-Project/Chronos/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The Blocknode repo's [root README](https://github.com/Blocknode-Project/Blocknod
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Blocknode](http://forum.blocknode.tech/) forum.
-* Join the [Blocknode-Dev](https://blocknode-dev.slack.com/) Slack group ([Sign-Up](https://blocknode-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Chronos](http://forum.chronos.tech/) forum.
+* Join the [Chronos-Dev](https://chronos-dev.slack.com/) Slack group ([Sign-Up](https://chronos-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

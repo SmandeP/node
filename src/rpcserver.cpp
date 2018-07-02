@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Blocknode developers
+// Copyright (c) 2018 The Chronos developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -264,11 +264,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Blocknode server.");
+            "\nStop Chronos server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "Blocknode server stopping";
+    return "Chronos server stopping";
 }
 
 
@@ -352,36 +352,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Blocknode features */
-        {"blocknode", "masternode", &masternode, true, true, false},
-        {"blocknode", "listmasternodes", &listmasternodes, true, true, false},
-        {"blocknode", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"blocknode", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"blocknode", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"blocknode", "masternodedebug", &masternodedebug, true, true, false},
-        {"blocknode", "startmasternode", &startmasternode, true, true, false},
-        {"blocknode", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"blocknode", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"blocknode", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"blocknode", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"blocknode", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"blocknode", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"blocknode", "mnbudget", &mnbudget, true, true, false},
-        {"blocknode", "preparebudget", &preparebudget, true, true, false},
-        {"blocknode", "submitbudget", &submitbudget, true, true, false},
-        {"blocknode", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"blocknode", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"blocknode", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"blocknode", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"blocknode", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"blocknode", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"blocknode", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"blocknode", "checkbudgets", &checkbudgets, true, true, false},
-        {"blocknode", "mnsync", &mnsync, true, true, false},
-        {"blocknode", "spork", &spork, true, true, false},
-        {"blocknode", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Chronos features */
+        {"chronos", "masternode", &masternode, true, true, false},
+        {"chronos", "listmasternodes", &listmasternodes, true, true, false},
+        {"chronos", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"chronos", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"chronos", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"chronos", "masternodedebug", &masternodedebug, true, true, false},
+        {"chronos", "startmasternode", &startmasternode, true, true, false},
+        {"chronos", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"chronos", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"chronos", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"chronos", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"chronos", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"chronos", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"chronos", "mnbudget", &mnbudget, true, true, false},
+        {"chronos", "preparebudget", &preparebudget, true, true, false},
+        {"chronos", "submitbudget", &submitbudget, true, true, false},
+        {"chronos", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"chronos", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"chronos", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"chronos", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"chronos", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"chronos", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"chronos", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"chronos", "checkbudgets", &checkbudgets, true, true, false},
+        {"chronos", "mnsync", &mnsync, true, true, false},
+        {"chronos", "spork", &spork, true, true, false},
+        {"chronos", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"blocknode", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"chronos", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -608,7 +608,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> blocknode-cli " + methodname + " " + args + "\n";
+    return "> chronos-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

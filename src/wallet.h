@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Blocknode developers
+// Copyright (c) 2018 The Chronos developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -81,29 +81,29 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 BND at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 CRN at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zBND send
+// Possible states for zCRN send
 enum ZerocoinSpendStatus {
-    ZBND_SPEND_OKAY = 0,                            // No error
-    ZBND_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZBND_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZBND_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZBND_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZBND_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZBND_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZBND_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZBND_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZBND_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZBND_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZBND_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZBND_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZBND_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZBND_SPENT_USED_ZBND = 14,                      // Coin has already been spend
-    ZBND_TX_TOO_LARGE = 15                          // The transaction is larger than the max tx size
+    ZCRN_SPEND_OKAY = 0,                            // No error
+    ZCRN_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZCRN_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZCRN_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZCRN_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZCRN_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZCRN_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZCRN_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZCRN_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZCRN_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZCRN_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZCRN_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZCRN_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZCRN_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZCRN_SPENT_USED_ZCRN = 14,                      // Coin has already been spend
+    ZCRN_TX_TOO_LARGE = 15                          // The transaction is larger than the max tx size
 };
 
 struct CompactTallyItem {
@@ -209,7 +209,7 @@ public:
     std::string ResetMintZerocoin(bool fExtendedSearch);
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored);
-    void ZBndBackupWallet();
+    void ZCrnBackupWallet();
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -317,7 +317,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZBndAutoBackups(bool fEnabled)
+    void setZCrnAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }
@@ -644,8 +644,8 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zBND reset */
-    boost::signals2::signal<void()> NotifyzBNDReset;
+    /** zCRN reset */
+    boost::signals2::signal<void()> NotifyzCRNReset;
 };
 
 

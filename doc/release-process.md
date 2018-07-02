@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/Blocknode-Project/Blocknode/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/Chronos-Project/Chronos/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/blocknode-project/gitian.sigs.git
-    git clone https://github.com/blocknode-project/blocknode-detached-sigs.git
+    git clone https://github.com/chronos-project/gitian.sigs.git
+    git clone https://github.com/chronos-project/chronos-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/blocknode-project/blocknode.git
+    git clone https://github.com/chronos-project/chronos.git
 
-### Blocknode maintainers/release engineers, suggestion for writing release notes
+### Chronos maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./blocknode
+    pushd ./chronos
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../blocknode/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../chronos/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,55 +92,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url blocknode=/path/to/blocknode,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url chronos=/path/to/chronos,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Blocknode Core for Linux, Windows, and OS X:
+### Build and sign Chronos Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit blocknode=v${VERSION} ../blocknode/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../blocknode/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/blocknode-*.tar.gz build/out/src/blocknode-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit chronos=v${VERSION} ../chronos/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../chronos/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/chronos-*.tar.gz build/out/src/chronos-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit blocknode=v${VERSION} ../blocknode/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../blocknode/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/blocknode-*-win-unsigned.tar.gz inputs/blocknode-win-unsigned.tar.gz
-    mv build/out/blocknode-*.zip build/out/blocknode-*.exe ../
+    ./bin/gbuild --memory 3000 --commit chronos=v${VERSION} ../chronos/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../chronos/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/chronos-*-win-unsigned.tar.gz inputs/chronos-win-unsigned.tar.gz
+    mv build/out/chronos-*.zip build/out/chronos-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit blocknode=v${VERSION} ../blocknode/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../blocknode/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/blocknode-*-osx-unsigned.tar.gz inputs/blocknode-osx-unsigned.tar.gz
-    mv build/out/blocknode-*.tar.gz build/out/blocknode-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit chronos=v${VERSION} ../chronos/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../chronos/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/chronos-*-osx-unsigned.tar.gz inputs/chronos-osx-unsigned.tar.gz
+    mv build/out/chronos-*.tar.gz build/out/chronos-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit blocknode=v${VERSION} ../blocknode/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../blocknode/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/blocknode-*.tar.gz build/out/src/blocknode-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit chronos=v${VERSION} ../chronos/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../chronos/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/chronos-*.tar.gz build/out/src/chronos-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`blocknode-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`blocknode-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`blocknode-${VERSION}-win[32|64]-setup-unsigned.exe`, `blocknode-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`blocknode-${VERSION}-osx-unsigned.dmg`, `blocknode-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`chronos-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`chronos-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`chronos-${VERSION}-win[32|64]-setup-unsigned.exe`, `chronos-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`chronos-${VERSION}-osx-unsigned.dmg`, `chronos-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import blocknode/contrib/gitian-keys/*.pgp
+    gpg --import chronos/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../blocknode/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../blocknode/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../blocknode/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../blocknode/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../chronos/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../chronos/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../chronos/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../chronos/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -162,22 +162,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer blocknode-osx-unsigned.tar.gz to osx for signing
-    tar xf blocknode-osx-unsigned.tar.gz
+    transfer chronos-osx-unsigned.tar.gz to osx for signing
+    tar xf chronos-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf blocknode-win-unsigned.tar.gz
+    tar xf chronos-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/blocknode-detached-sigs
+    cd ~/chronos-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -190,25 +190,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [blocknode-detached-sigs](https://github.com/Blocknode-Project/blocknode-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [chronos-detached-sigs](https://github.com/Chronos-Project/chronos-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../blocknode/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../blocknode/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../blocknode/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/blocknode-osx-signed.dmg ../blocknode-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../chronos/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../chronos/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../chronos/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/chronos-osx-signed.dmg ../chronos-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../blocknode/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../blocknode/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../blocknode/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/blocknode-*win64-setup.exe ../blocknode-${VERSION}-win64-setup.exe
-    mv build/out/blocknode-*win32-setup.exe ../blocknode-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../chronos/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../chronos/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../chronos/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/chronos-*win64-setup.exe ../chronos-${VERSION}-win64-setup.exe
+    mv build/out/chronos-*win32-setup.exe ../chronos-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -230,23 +230,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-blocknode-${VERSION}-aarch64-linux-gnu.tar.gz
-blocknode-${VERSION}-arm-linux-gnueabihf.tar.gz
-blocknode-${VERSION}-i686-pc-linux-gnu.tar.gz
-blocknode-${VERSION}-x86_64-linux-gnu.tar.gz
-blocknode-${VERSION}-osx64.tar.gz
-blocknode-${VERSION}-osx.dmg
-blocknode-${VERSION}.tar.gz
-blocknode-${VERSION}-win32-setup.exe
-blocknode-${VERSION}-win32.zip
-blocknode-${VERSION}-win64-setup.exe
-blocknode-${VERSION}-win64.zip
+chronos-${VERSION}-aarch64-linux-gnu.tar.gz
+chronos-${VERSION}-arm-linux-gnueabihf.tar.gz
+chronos-${VERSION}-i686-pc-linux-gnu.tar.gz
+chronos-${VERSION}-x86_64-linux-gnu.tar.gz
+chronos-${VERSION}-osx64.tar.gz
+chronos-${VERSION}-osx.dmg
+chronos-${VERSION}.tar.gz
+chronos-${VERSION}-win32-setup.exe
+chronos-${VERSION}-win32.zip
+chronos-${VERSION}-win64-setup.exe
+chronos-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the blocknode.tech server*.
+space *do not upload these to the chronos.tech server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -262,10 +262,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/blocknode, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/chronos, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/Blocknode-Project/Blocknode/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/Chronos-Project/Chronos/releases/new) with a link to the archived release notes.
 
   - Celebrate

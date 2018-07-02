@@ -164,8 +164,8 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BND&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES BNDS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRN&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES CRNS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Core</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Core</translation>
     </message>
     <message>
-        <source>&amp;About Blocknode Core</source>
-        <translation>&amp;Sobre Blocknode Core</translation>
+        <source>&amp;About Chronos Core</source>
+        <translation>&amp;Sobre Chronos Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Core</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Core</translation>
     </message>
     <message>
-        <source>About Blocknode Core</source>
-        <translation>Sobre Blocknode Core</translation>
+        <source>About Chronos Core</source>
+        <translation>Sobre Chronos Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Blocknode Core.</source>
-        <translation>Benvingut a Blocknode Core.</translation>
+        <source>Welcome to Chronos Core.</source>
+        <translation>Benvingut a Chronos Core.</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Core</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1147,8 +1147,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Core</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1307,10 +1307,10 @@
     </message>
     </context>
 <context>
-    <name>ZBndControlDialog</name>
+    <name>ZCrnControlDialog</name>
     </context>
 <context>
-    <name>blocknode-core</name>
+    <name>chronos-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

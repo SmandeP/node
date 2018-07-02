@@ -183,9 +183,9 @@
     </message>
     </context>
 <context>
-    <name>ZBndControlDialog</name>
+    <name>ZCrnControlDialog</name>
     </context>
 <context>
-    <name>blocknode-core</name>
+    <name>chronos-core</name>
     </context>
 </TS>

@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BND&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE BND!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRN&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE CRN!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Blocknode address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Blocknode jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Chronos address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Chronos jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>&amp;Rdzeń Blocknode</translation>
+        <source>Chronos Core</source>
+        <translation>&amp;Rdzeń Chronos</translation>
     </message>
     <message>
-        <source>Send coins to a Blocknode address</source>
-        <translation>Wyślij monety do adresu Blocknode</translation>
+        <source>Send coins to a Chronos address</source>
+        <translation>Wyślij monety do adresu Chronos</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and blocknode: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i blocknode:URI)</translation>
+        <source>Request payments (generates QR codes and chronos: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i chronos:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Blocknode Core</source>
+        <source>&amp;About Chronos Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Blocknode Core</source>
+        <source>Show information about Chronos Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Blocknode</source>
-        <translation>Modyfikuj opcje konfiguracji Blocknode</translation>
+        <source>Modify configuration options for Chronos</source>
+        <translation>Modyfikuj opcje konfiguracji Chronos</translation>
     </message>
     <message>
-        <source>Sign messages with your Blocknode addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Blocknode, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Chronos addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Chronos, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Blocknode addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Blocknode</translation>
+        <source>Verify messages to ensure they were signed with specified Chronos addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Chronos</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Blocknode: URI or payment request</source>
-        <translation>Otwórz Blocknode: URI i żądanie zapłaty</translation>
+        <source>Open a Chronos: URI or payment request</source>
+        <translation>Otwórz Chronos: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Blocknode Core help message to get a list with possible Blocknode command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Blocknode, aby dostać listę możliwych opcji Blocknode command-line</translation>
+        <source>Show the Chronos Core help message to get a list with possible Chronos command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Chronos, aby dostać listę możliwych opcji Chronos command-line</translation>
     </message>
     <message>
-        <source>Blocknode Core client</source>
-        <translation>Rdzeń Blocknode klient</translation>
+        <source>Chronos Core client</source>
+        <translation>Rdzeń Chronos klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Blocknode Core</source>
-        <translation>&amp;Rdzeń Blocknode</translation>
+        <source>Chronos Core</source>
+        <translation>&amp;Rdzeń Chronos</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>&amp;Rdzeń Blocknode</translation>
+        <source>Chronos Core</source>
+        <translation>&amp;Rdzeń Chronos</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Blocknode after logging in to the system.</source>
-        <translation>Automatycznie uruchom Blocknode po zalogowaniu do systemu</translation>
+        <source>Automatically start Chronos after logging in to the system.</source>
+        <translation>Automatycznie uruchom Chronos po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Blocknode on system login</source>
-        <translation>&amp;Uruchom Blocknode podczas logowania do systemu</translation>
+        <source>&amp;Start Chronos on system login</source>
+        <translation>&amp;Uruchom Chronos podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Blocknode.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Blocknode</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Chronos.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Chronos</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/blocknode-project/blocknode-project-translations</source>
+https://www.transifex.com/chronos-project/chronos-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/blocknode-project/blocknode-project-translations </translation>
+https://www.transifex.com/chronos-project/chronos-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Blocknode network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Blocknode poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Chronos network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Chronos poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/blocknode-project/blocknode-project-translations </tra
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Blocknode address (e.g. %1)</source>
-        <translation>Wprowadź adres Blocknode (np. %1)</translation>
+        <source>Enter a Chronos address (e.g. %1)</source>
+        <translation>Wprowadź adres Chronos (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/blocknode-project/blocknode-project-translations </tra
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Blocknode address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Blocknode jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Chronos address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Chronos jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/blocknode-project/blocknode-project-translations </tra
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Blocknode Core</source>
-        <translation>&amp;Rdzeń Blocknode</translation>
+        <source>Chronos Core</source>
+        <translation>&amp;Rdzeń Chronos</translation>
     </message>
     </context>
 <context>
@@ -2027,14 +2027,14 @@ https://www.transifex.com/blocknode-project/blocknode-project-translations </tra
     </message>
     </context>
 <context>
-    <name>ZBndControlDialog</name>
+    <name>ZCrnControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>blocknode-core</name>
+    <name>chronos-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

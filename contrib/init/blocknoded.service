@@ -1,19 +1,19 @@
 [Unit]
-Description=Blocknode's distributed currency daemon
+Description=Chronos's distributed currency daemon
 After=network.target
 
 [Service]
-User=blocknode
-Group=blocknode
+User=chronos
+Group=chronos
 
 Type=forking
-PIDFile=/var/lib/blocknoded/blocknoded.pid
+PIDFile=/var/lib/chronosd/chronosd.pid
 
-ExecStart=/usr/bin/blocknoded -daemon -pid=/var/lib/blocknoded/blocknoded.pid \
-          -conf=/etc/blocknode/blocknode.conf -datadir=/var/lib/blocknoded
+ExecStart=/usr/bin/chronosd -daemon -pid=/var/lib/chronosd/chronosd.pid \
+          -conf=/etc/chronos/chronos.conf -datadir=/var/lib/chronosd
 
-ExecStop=-/usr/bin/blocknode-cli -conf=/etc/blocknode/blocknode.conf \
-         -datadir=/var/lib/blocknoded stop
+ExecStop=-/usr/bin/chronos-cli -conf=/etc/chronos/chronos.conf \
+         -datadir=/var/lib/chronosd stop
 
 Restart=always
 PrivateTmp=true

@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package blocknoded/blocknode-qt
-for Debian-based Linux systems. If you compile blocknoded/blocknode-qt yourself, there are some useful files here.
+This directory contains files used to package chronosd/chronos-qt
+for Debian-based Linux systems. If you compile chronosd/chronos-qt yourself, there are some useful files here.
 
-## blocknode: URI support ##
+## chronos: URI support ##
 
 
-blocknode-qt.desktop  (Gnome / Open Desktop)
+chronos-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install blocknode-qt.desktop
+	sudo desktop-file-install chronos-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your blocknodeqt binary to `/usr/bin`
-and the `../../share/pixmaps/blocknode128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your chronosqt binary to `/usr/bin`
+and the `../../share/pixmaps/chronos128.png` to `/usr/share/pixmaps`
 
-blocknode-qt.protocol (KDE)
+chronos-qt.protocol (KDE)
 

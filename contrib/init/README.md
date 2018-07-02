@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: blocknoded.service
-Upstart: blocknoded.conf
-OpenRC:  blocknoded.openrc
-         blocknoded.openrcconf
-CentOS:  blocknoded.init
+SystemD: chronosd.service
+Upstart: chronosd.conf
+OpenRC:  chronosd.openrc
+         chronosd.openrcconf
+CentOS:  chronosd.init
 
 have been made available to assist packagers in creating node packages here.
 

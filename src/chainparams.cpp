@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Blocknode developers
+// Copyright (c) 2018 The Chronos developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -109,7 +109,7 @@ public:
         pchMessageStart[3] = 0xd3;
         vAlertPubKey = ParseHex("047ff78a093ca911fbe3c7cd9b8b81976696d92e6ad3d987b00a4cc4841fe9689ed6902be9c6942ef77492d0531bf68cf2e53dc0ac683359f938a7a52a988ced8c");
         nDefaultPort = 21001;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Blocknode starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Chronos starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 64800;   // HALVING EVERY: 64800 BLOCKS
         nSubsidyBudgetPercentage = 5;      // Must be less than 100
         nMaxReorganizationDepth = 100;
@@ -117,8 +117,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 60 * 60; // Blocknode: 1 hr
-        nTargetSpacing = 120;  // Blocknode: 2 min
+        nTargetTimespan = 60 * 60; // Chronos: 1 hr
+        nTargetSpacing = 120;  // Chronos: 2 min
         nMaturity = 10;
         nMasternodeCollateral = 20000; // 100000
         nMasternodeCountDrift = 20;
@@ -262,8 +262,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 60 * 60; // Blocknode: 1 hr
-        nTargetSpacing = 120;  // Blocknode: 2 min
+        nTargetTimespan = 60 * 60; // Chronos: 1 hr
+        nTargetSpacing = 120;  // Chronos: 2 min
         nLastPOWBlock = 500;
         nMaturity = 30;
         nMasternodeCountDrift = 4;
@@ -309,15 +309,15 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("blocknode.tech", "testnet-seeds.blocknode.tech"));             // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("gig8.com", "testnet-seeds.blocknode.gig8.com"));      // Secondary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("chronos.tech", "testnet-seeds.chronos.tech"));             // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("gig8.com", "testnet-seeds.chronos.gig8.com"));      // Secondary DNS Seeder
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // Testnet blocknode addresses start with 'b''
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 125);  // Testnet blocknode script addresses start with 's'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // Testnet chronos addresses start with 'b''
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 125);  // Testnet chronos script addresses start with 's'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 137);     // Testnet private keys start with 'x'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet blocknode BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet chronos BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -363,8 +363,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 60 * 60; // Blocknode: 1 hour
-        nTargetSpacing = 120;        // Blocknode: 2 min
+        nTargetTimespan = 60 * 60; // Chronos: 1 hour
+        nTargetSpacing = 120;        // Chronos: 2 min
         bnProofOfWorkLimit = ~uint256(0) >> 1;
 
         /*

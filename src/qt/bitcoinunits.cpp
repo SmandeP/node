@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Blocknode developers
+// Copyright (c) 2018 The Chronos developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(BND);
-    unitlist.append(mBND);
-    unitlist.append(uBND);
+    unitlist.append(CRN);
+    unitlist.append(mCRN);
+    unitlist.append(uCRN);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case BND:
-    case mBND:
-    case uBND:
+    case CRN:
+    case mCRN:
+    case uCRN:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case BND:
-        return QString("blocknode");
-    case mBND:
-        return QString("mblocknode");
-    case uBND:
-        return QString::fromUtf8("ublocknode");
+    case CRN:
+        return QString("chronos");
+    case mCRN:
+        return QString("mchronos");
+    case uCRN:
+        return QString::fromUtf8("uchronos");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case BND:
-            return QString("BND");
-        case mBND:
-            return QString("mBND");
-        case uBND:
-            return QString::fromUtf8("μBND");
+        case CRN:
+            return QString("CRN");
+        case mCRN:
+            return QString("mCRN");
+        case uCRN:
+            return QString::fromUtf8("μCRN");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case BND:
-            return QString("tBND");
-        case mBND:
-            return QString("mtBND");
-        case uBND:
-            return QString::fromUtf8("μtBND");
+        case CRN:
+            return QString("tCRN");
+        case mCRN:
+            return QString("mtCRN");
+        case uCRN:
+            return QString::fromUtf8("μtCRN");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case BND:
-            return QString("BND");
-        case mBND:
-            return QString("Milli-BND (1 / 1" THIN_SP_UTF8 "000)");
-        case uBND:
-            return QString("Micro-BND (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CRN:
+            return QString("CRN");
+        case mCRN:
+            return QString("Milli-CRN (1 / 1" THIN_SP_UTF8 "000)");
+        case uCRN:
+            return QString("Micro-CRN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case BND:
-            return QString("TestBNDs");
-        case mBND:
-            return QString("Milli-TestBND (1 / 1" THIN_SP_UTF8 "000)");
-        case uBND:
-            return QString("Micro-TestBND (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CRN:
+            return QString("TestCRNs");
+        case mCRN:
+            return QString("Milli-TestCRN (1 / 1" THIN_SP_UTF8 "000)");
+        case uCRN:
+            return QString("Micro-TestCRN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case BND:
+    case CRN:
         return COIN;
-    case mBND:
+    case mCRN:
         return COIN / 1000;
-    case uBND:
+    case uCRN:
         return COIN / 1000000;
     default:
         return COIN;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case BND:
+    case CRN:
         return 6;
-    case mBND:
+    case mCRN:
         return 3;
-    case uBND:
+    case uCRN:
         return 0;
     default:
         return 0;

@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Blocknode addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Blocknode osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Chronos addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Chronos osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Blocknode addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Blocknode osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Chronos addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Chronos osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Blocknode will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BNDs from being stolen by malware infecting your computer.</source>
-        <translation>Blocknode sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella BNDien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Chronos will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CRNs from being stolen by malware infecting your computer.</source>
+        <translation>Chronos sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella CRNien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BND&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki BNDisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CRN&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki CRNisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Blocknode Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Blocknode osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a Chronos Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä Chronos osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The Blocknode address to sign the message with</source>
-        <translation>Blocknode osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Chronos address to sign the message with</source>
+        <translation>Chronos osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Blocknode address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Blocknode osoitteen</translation>
+        <source>Sign the message to prove you own this Chronos address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Chronos osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The Blocknode address the message was signed with</source>
-        <translation>Blocknode osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Chronos address the message was signed with</source>
+        <translation>Chronos osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Blocknode address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Blocknode osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Chronos address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Chronos osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Ydin</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a Blocknode address</source>
-        <translation>Lähetä kolikkoja Blocknode osoitteeseen</translation>
+        <source>Send coins to a Chronos address</source>
+        <translation>Lähetä kolikkoja Chronos osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and blocknode: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja blocknode: URIja)</translation>
+        <source>Request payments (generates QR codes and chronos: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja chronos: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Blocknode Core</source>
-        <translation>Blocknode Core &amp;ytimestä</translation>
+        <source>&amp;About Chronos Core</source>
+        <translation>Chronos Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Blocknode Core</source>
-        <translation>Näytä tietoja Blocknode Ytimestä</translation>
+        <source>Show information about Chronos Core</source>
+        <translation>Näytä tietoja Chronos Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Blocknode</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Blocknode:lle</translation>
+        <source>Modify configuration options for Chronos</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Chronos:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your Blocknode addresses to prove you own them</source>
+        <source>Sign messages with your Chronos addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Blocknode addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Blocknode osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Chronos addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Chronos osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a Blocknode: URI or payment request</source>
-        <translation>Avaa Blocknode: URI tai pyydä maksua</translation>
+        <source>Open a Chronos: URI or payment request</source>
+        <translation>Avaa Chronos: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Blocknode Core help message to get a list with possible Blocknode command-line options</source>
-        <translation>Näytä Blocknode Ydin apuviesti saadaksesi lista mahdollisista Blocknode komentolinja komennoista.</translation>
+        <source>Show the Chronos Core help message to get a list with possible Chronos command-line options</source>
+        <translation>Näytä Chronos Ydin apuviesti saadaksesi lista mahdollisista Chronos komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Blocknode Core client</source>
-        <translation>Blocknode Ydin asiakasohjelma</translation>
+        <source>Chronos Core client</source>
+        <translation>Chronos Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Ydin</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Blocknode Core.</source>
-        <translation>Tervetuloa Blocknode Ytimeen.</translation>
+        <source>Welcome to Chronos Core.</source>
+        <translation>Tervetuloa Chronos Ytimeen.</translation>
     </message>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Ydin</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BND</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Blocknode</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CRN</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Chronos</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BND</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Blocknode</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CRN</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Chronos</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BND to anonymize 10000 BND</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 BND anonymoidaksesi 10000 Blocknode</translation>
+        <source>This option is the quickest and will cost about ~0.025 CRN to anonymize 10000 CRN</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 CRN anonymoidaksesi 10000 Chronos</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BND to anonymize 10000 BND</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Blocknode anonymoidaksesi 10000 Blocknode</translation>
+        <source>This option is moderately fast and will cost about 0.05 CRN to anonymize 10000 CRN</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Chronos anonymoidaksesi 10000 Chronos</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 BND per 10000 BND you anonymize.</source>
-        <translation>0.1 per 10000 Blocknode, jotka anonymisoit.</translation>
+        <source>0.1 CRN per 10000 CRN you anonymize.</source>
+        <translation>0.1 per 10000 Chronos, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Blocknode after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Blocknode kun kirjaudut sisään.</translation>
+        <source>Automatically start Chronos after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Chronos kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Blocknode on system login</source>
-        <translation>&amp;Aloita Blocknode järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Chronos on system login</source>
+        <translation>&amp;Aloita Chronos järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Blocknode.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Chronos.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the Blocknode network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Blocknode verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Chronos network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Chronos verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the Blocknode debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Blocknode debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Chronos debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Chronos debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Blocknode RPC console.</source>
-        <translation>Tervetuloa Blocknode RPC konsoliin.</translation>
+        <source>Welcome to the Chronos RPC console.</source>
+        <translation>Tervetuloa Chronos RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blocknode network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Blocknode verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Chronos network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Chronos verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Blocknode network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Blocknode  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Chronos network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Chronos  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 BND</source>
-        <translation>0 BND</translation>
+        <source>0 CRN</source>
+        <translation>0 CRN</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid Blocknode address</source>
-        <translation>Varoitus: Virheellinen Blocknode osoite</translation>
+        <source>Warning: Invalid Chronos address</source>
+        <translation>Varoitus: Virheellinen Chronos osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The Blocknode address to send the payment to</source>
-        <translation>Blocknode osoite johon maksu lähetetään</translation>
+        <source>The Chronos address to send the payment to</source>
+        <translation>Chronos osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Blocknode Core is shutting down...</source>
-        <translation>Blocknode core sammuu...</translation>
+        <source>Chronos Core is shutting down...</source>
+        <translation>Chronos core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The Blocknode address to sign the message with</source>
-        <translation>Blocknode osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Chronos address to sign the message with</source>
+        <translation>Chronos osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Blocknode address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Blocknode osoitteen</translation>
+        <source>Sign the message to prove you own this Chronos address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Chronos osoitteen</translation>
     </message>
     <message>
-        <source>The Blocknode address the message was signed with</source>
-        <translation>Blocknode osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Chronos address the message was signed with</source>
+        <translation>Chronos osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Blocknode address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Blocknode osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Chronos address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Chronos osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Blocknode Core</source>
-        <translation>Blocknode Ydin</translation>
+        <source>Chronos Core</source>
+        <translation>Chronos Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Blocknode Core developers</source>
-        <translation>Blocknode core kehittäjät</translation>
+        <source>The Chronos Core developers</source>
+        <translation>Chronos core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2534,14 +2534,14 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>ZBndControlDialog</name>
+    <name>ZCrnControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>blocknode-core</name>
+    <name>chronos-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Blocknode Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Blocknode Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Chronos Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Chronos Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
